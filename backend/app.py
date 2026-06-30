@@ -1,7 +1,5 @@
-import sys
+
 import os
-# Force Python to look in the main project root folder for imports
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from contextlib import asynccontextmanager
 
