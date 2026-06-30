@@ -9,7 +9,7 @@ if root_dir not in sys.path:
 from pydantic_ai import Agent
 from pydantic_ai.models.google import GoogleModel
 
-import backend.config
+import config
 from mcp_client.instance import initialize, manager
 from mcp_client.manager_toolset import ManagerToolset
 from policy.wrapper_toolset import PolicyToolset
