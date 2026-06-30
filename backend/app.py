@@ -8,7 +8,7 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
 from agent import chat
-from mcp_client.instance import initialize, manager
+from backend.mcp_client.instance import initialize, manager
 from policy import store
 from policy.models import PolicyDecision
 

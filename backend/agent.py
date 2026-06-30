@@ -10,8 +10,8 @@ from pydantic_ai import Agent
 from pydantic_ai.models.google import GoogleModel
 
 import config
-from mcp_client.instance import initialize, manager
-from mcp_client.manager_toolset import ManagerToolset
+from backend.mcp_client.instance import initialize, manager
+from backend.mcp_client.manager_toolset import ManagerToolset
 from policy.wrapper_toolset import PolicyToolset
 
 model = GoogleModel("gemini-3.1-flash-lite")
