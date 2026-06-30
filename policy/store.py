@@ -19,9 +19,9 @@ _rules: Dict[str, PolicyDecision] = {}
 
 # Regex validation rules for specific tool arguments
 _validators = {
-    "save_note": {"filename": r"^[a-zA-Z0-9_-]+\.txt$"},
-    "read_note": {"filename": r"^[a-zA-Z0-9_-]+\.txt$"},
-    "delete_note": {"filename": r"^[a-zA-Z0-9_-]+\.txt$"}
+    "save_note": {"filename": r"^[a-zA-Z0-9_-]+\.(txt|md)$"},
+    "read_note": {"filename": r"^[a-zA-Z0-9_-]+\.(txt|md)$"},
+    "delete_note": {"filename": r"^[a-zA-Z0-9_-]+\.(txt|md)$"}
 }
 
 def get_validators(tool_name: str) -> dict:
